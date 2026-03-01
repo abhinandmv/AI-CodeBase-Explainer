@@ -1,74 +1,73 @@
-# ---------------------------
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.env/
+.env.*
+!.env.example
+
+# -------------------------
+# FastAPI / App
+# -------------------------
+clones/
+outputs/
+
+# Logs
+*.log
+
+# SQLite / DB
+*.db
+*.sqlite3
+
+# -------------------------
+# Celery
+# -------------------------
+celerybeat-schedule
+celerybeat.pid
+
+# -------------------------
+# Docker
+# -------------------------
+*.pid
+*.sock
+*.tar
+
+# -------------------------
 # OS Files
-# ---------------------------
+# -------------------------
 .DS_Store
 Thumbs.db
 
-# ---------------------------
+# -------------------------
 # IDE / Editor
-# ---------------------------
+# -------------------------
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# ---------------------------
-# Node.js
-# ---------------------------
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-dist/
-build/
-
-# ---------------------------
-# Python
-# ---------------------------
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.sqlite3
-.env
-.venv/
-venv/
-env/
-
-# ---------------------------
-# Logs
-# ---------------------------
-*.log
-logs/
-
-# ---------------------------
+# -------------------------
 # Testing / Coverage
-# ---------------------------
+# -------------------------
 .coverage
 htmlcov/
 .pytest_cache/
 
-# ---------------------------
-# Temporary Files
-# ---------------------------
-tmp/
-temp/
+# -------------------------
+# Distribution / Packaging
+# -------------------------
+build/
+dist/
+*.egg-info/
+
+# -------------------------
+# Misc
+# -------------------------
+*.bak
 *.tmp
-
-# ---------------------------
-# Local AI Models (if using Ollama)
-# ---------------------------
-models/
-*.gguf
-
-# ---------------------------
-# Docker (optional)
-# ---------------------------
-*.env
-docker-data/
-
-# ---------------------------
-# Keep Kiro specs (DO NOT IGNORE)
-# ---------------------------
-# .kiro/   ← intentionally NOT ignored
+*.retry
